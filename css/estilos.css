@@ -3,6 +3,30 @@
   --bg-main-light-mode: #4c1036;
   --bg-second-light-mode: #71a9f7;
   --bg-third-light-mode: #c6d8ff;
+  --text-light-mode: #000;
+  --bg-dark-body: #131313;
+
+  --bg-main-dark-mode: #71a9f7;
+  --bg-second-dark-mode: #484848;
+  --bg-third-dark-mode: #1d1d1d;
+  --text-dark-mode: #d5d5d5;
+  --bg-light-body: #ededed;
+}
+.light {
+  --bg-main: var(--bg-main-light-mode);
+  --bg-second: var(--bg-second-light-mode);
+  --bg-third: var(--bg-third-light-mode);
+  --color-text: var(--text-light-mode);
+  --bg-body: var(--bg-light-body);
+}
+.dark {
+  --bg-main: var(--bg-main-dark-mode);
+  --bg-second: var(--bg-second-dark-mode);
+  --bg-third: var(--bg-third-dark-mode);
+  --color-text: var(--text-dark-mode);
+  --bg-body: var(--bg-dark-body);
+}
+html {
 }
 * {
   scroll-behavior: smooth;
@@ -12,14 +36,16 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #fff;
+  color: var(--color-text);
+  background-color: var(--bg-body);
   font-size: 14px;
+  transition: background 200ms ease;
 }
 /******** PARTE DEL ENCABEZADP  ****************/
 header {
   width: 100%;
   height: 60px;
-  /* background-color: var(--bg-second-light-mode); */
+  /* background-color: var(--bg-second); */
   position: fixed;
   top: 0;
   z-index: 999;
@@ -44,8 +70,37 @@ header .logo p {
   user-select: none;
 }
 header .logo p span {
-  color: var(--bg-main-light-mode);
+  color: var(--bg-main);
   font-family: "Righteous", cursive;
+}
+header .switch-dark-mode {
+  width: 50px;
+  height: 25px;
+  background-color: var(--bg-third);
+  border-radius: 50px;
+  font-size: 16px;
+  position: relative;
+}
+header .switch-dark-mode .toggle-switch {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--bg-body);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.dark .switch-dark-mode .toggle-switch {
+  left: 100%;
+  transform: translateX(-100%);
+}
+header .switch-dark-mode .icons {
+  display: flex;
+  justify-content: space-between;
+}
+header .switch-dark-mode span {
+  /* background-color: red; */
 }
 header nav {
   height: 100%;
@@ -71,8 +126,11 @@ header nav ul li a {
   transition: background 0.3s ease, color 0.3s ease;
 }
 header nav ul li a:hover {
-  background-color: var(--bg-third-light-mode);
+  background-color: var(--bg-third);
   color: #000;
+}
+.dark header nav ul li a:hover {
+  color: #fff;
 }
 header .fa-bars {
   font-size: 2rem;
@@ -153,7 +211,7 @@ header .fa-bars {
 }
 .container-portada .container-portada-card span {
   font-size: 2.7rem;
-  color: var(--bg-second-light-mode);
+  color: var(--bg-main);
 }
 .container-portada .container-portada-btn {
   backdrop-filter: blur(4px);
@@ -198,7 +256,7 @@ main {
 .container-all section {
   margin-top: 4rem;
   padding: 4rem 2rem;
-  background-color: var(--bg-third-light-mode);
+  background-color: var(--bg-third);
   width: 80%;
   position: relative;
   display: flex;
@@ -206,14 +264,14 @@ main {
   border-radius: 10px;
 }
 .container-all section > h2 {
-  background-color: #fff;
+  background-color: var(--bg-body);
   display: inline-block;
   align-self: center;
   margin: 0 0 2rem;
   padding: 10px 20px;
   border-radius: 30px;
   text-align: center;
-  color: var(--bg-main-light-mode);
+  color: var(--bg-main);
   font-weight: 300;
 }
 /************************* ACERCA DE  *************/
@@ -226,7 +284,7 @@ main {
   width: 50%;
 }
 .content-about .text-about {
-  background-color: #fff;
+  background-color: var(--bg-body);
   padding: 15px 20px;
   border-radius: 10px;
   position: relative;
@@ -240,7 +298,7 @@ main {
   height: 180px;
 }
 .top-line {
-  background-color: var(--bg-main-light-mode);
+  background-color: var(--bg-main);
   width: 100%;
   height: 7px;
   position: absolute;
@@ -264,7 +322,7 @@ main {
   align-content: flex-start;
 }
 .content-skills .content-skill-card {
-  background-color: #ffffff;
+  background-color: var(--bg-body);
   width: 110px;
   height: 110px;
   padding: 15px 0;
@@ -285,7 +343,7 @@ main {
   margin-bottom: 5px;
   padding: 5px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--bg-body);
   transition: transform 0.3s ease, color 0.3s ease, background 0.2s ease;
 }
 .content-skills .content-skill-card i,
@@ -313,7 +371,7 @@ main {
   color: #f34f29;
 }
 .content-skill-card .background-hover {
-  background-color: var(--bg-second-light-mode);
+  background-color: var(--bg-second);
   width: 10px;
   height: 10px;
   position: absolute;
@@ -346,7 +404,17 @@ main {
 .content-skill-card.card-react .background-hover {
   background-color: #60dafb;
 }
-.content-skill-card.card-sass .background-hover {
+.dark .content-skill-card.card-react:hover h3 {
+  color: #000;
+}
+.dark .content-skill-card.card-js:hover i {
+  background-color: #000;
+}
+.dark .content-skill-card.card-js:hover h3 {
+  color: #000;
+}
+
+.dark .content-skill-card.card-sass .background-hover {
   background-color: #cc6699;
 }
 .content-skill-card.card-git .background-hover {
@@ -409,7 +477,7 @@ main {
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  background: var(--bg-main-light-mode);
+  background: var(--bg-main);
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .bar .progress-line.html span {
@@ -544,7 +612,7 @@ main {
   width: 5px;
 }
 .grid-card .blur-bg-description .blur-bg-text::-webkit-scrollbar-thumb {
-  background-color: var(--bg-third-light-mode);
+  background-color: var(--bg-third);
   border-radius: 5px;
 }
 .grid-card .blur-bg-description .blur-bg-text::-webkit-scrollbar-track {
@@ -552,7 +620,7 @@ main {
 }
 
 .grid-card .blur-bg-description a {
-  background-color: var(--bg-main-light-mode);
+  background-color: var(--bg-main);
   color: #fff;
   text-decoration: none;
   padding: 5px;
@@ -561,10 +629,10 @@ main {
   align-self: center;
 }
 .grid-card .blur-bg-description a:hover {
-  background-color: var(--bg-second-light-mode);
+  background-color: var(--bg-second);
 }
 .grid-card .blur-bg-description a:active {
-  background-color: var(--bg-third-light-mode);
+  background-color: var(--bg-third);
   color: #000;
 }
 .blur-bg-links a.color-second {
@@ -572,7 +640,7 @@ main {
   margin-left: 10px;
 }
 .blur-bg-links a.color-second:hover {
-  background-color: var(--bg-second-light-mode);
+  background-color: var(--bg-second);
   color: #fff;
 }
 /*************************** CONTACTO ***********************/
@@ -606,14 +674,14 @@ main {
 }
 
 .contact a i {
-  color: var(--bg-second-light-mode);
+  color: var(--bg-second);
 }
 
 .contact .contact-icons a.telegram:hover {
   background-color: #0088cc;
 }
 .contact .contact-icons a.github:hover {
-  background-color: #ad5c51;
+  background-color: #1f1f1f;
 }
 .contact .contact-icons a.mail:hover {
   background-color: #0a384e;
@@ -637,7 +705,7 @@ footer {
   width: 100%;
   color: #fff;
   font-size: 14px;
-  background-color: var(--bg-second-light-mode);
+  background-color: var(--bg-second);
 }
 footer .container-footer {
   display: flex;
@@ -714,7 +782,7 @@ body .width-desktop {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-bottom: 60px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(13px);
