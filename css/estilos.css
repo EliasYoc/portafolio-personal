@@ -90,6 +90,10 @@ header .switch-dark-mode .toggle-switch {
   background-color: var(--bg-body);
   cursor: pointer;
   transition: all 300ms ease;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+}
+.dark header .switch-dark-mode .toggle-switch {
+  border: 1px solid #494949ab;
 }
 .dark .switch-dark-mode .toggle-switch {
   left: 100%;
@@ -103,8 +107,11 @@ header .switch-dark-mode span {
   /* background-color: red; */
   margin: 0 5px;
 }
-.light .switch-dark-mode span i.fa-sun {
+.dark .switch-dark-mode span i.fa-sun {
   color: rgb(209, 146, 8);
+}
+.switch-dark-mode span i.fa-moon {
+  color: #919191;
 }
 header nav {
   height: 100%;
