@@ -383,7 +383,6 @@ main {
   color: #f34f29;
 }
 .content-skill-card .background-hover {
-  background-color: var(--bg-second);
   width: 10px;
   height: 10px;
   position: absolute;
@@ -426,7 +425,7 @@ main {
   color: #000;
 }
 
-.dark .content-skill-card.card-sass .background-hover {
+.content-skill-card.card-sass .background-hover {
   background-color: #cc6699;
 }
 .content-skill-card.card-git .background-hover {
