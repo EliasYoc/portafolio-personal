@@ -355,7 +355,6 @@ main {
   margin-bottom: 5px;
   padding: 5px;
   border-radius: 5px;
-  background-color: var(--bg-body);
   transition: transform 0.3s ease, color 0.3s ease, background 0.2s ease;
 }
 .content-skills .content-skill-card i,
