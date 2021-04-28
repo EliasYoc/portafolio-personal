@@ -577,6 +577,9 @@ main {
   object-fit: cover;
   transform: scale(1.55);
 }
+.dark img {
+  filter: brightness(80%);
+}
 .grid-card h3 {
   font-weight: 400;
   position: absolute;
