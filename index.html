@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
+    <link rel="preload" href="css/estilos.css" as="style" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -32,6 +33,7 @@
         </div>
         <nav id="nav">
           <ul>
+            <div class="line"></div>
             <li><a href="#" class="toggle">Inicio</a></li>
             <li><a href="#acerca-de" class="toggle">Acerca de mi</a></li>
             <li><a href="#skills" class="toggle">Skills</a></li>
@@ -42,7 +44,7 @@
         <i class="fas fa-bars" id="btn-bars"></i>
       </div>
     </header>
-    <div class="container-portada">
+    <div class="container-portada sec-scroll">
       <img
         loading="lazy"
         src="img/portada.jpg"
@@ -64,7 +66,7 @@
     </div>
     <div class="container-all width-desktop">
       <main>
-        <section id="acerca-de">
+        <section id="acerca-de" class="sec-scroll">
           <h2>Acerca de mí</h2>
           <div class="content-about">
             <img loading="lazy" src="img/about.svg" alt="" />
@@ -84,7 +86,7 @@
             </div>
           </div>
         </section>
-        <section id="skills">
+        <section id="skills" class="sec-scroll">
           <h2>Skills</h2>
           <p>
             Estas son las habilidades que he empezado a manejar, que por ahora
@@ -154,7 +156,7 @@
                     </div> -->
           </div>
         </section>
-        <section id="proyectos">
+        <section id="proyectos" class="sec-scroll">
           <h2>Proyectos</h2>
           <div class="grid-projects">
             <div class="grid-card">
@@ -376,7 +378,7 @@
       <aside></aside>
     </div>
     <footer>
-      <div class="container-footer width-desktop">
+      <div class="container-footer width-desktop sec-scroll">
         <div id="contacto" class="contact">
           <h2>Contacto</h2>
           <div class="contact-icons">

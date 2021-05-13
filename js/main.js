@@ -1,3 +1,4 @@
+import animatedNav from "./animated_nav.js";
 import activarBtn from "./boton_active.js";
 import changeHeaderColor from "./color_cabecera.js";
 import toggleSwitch from "./dark-mode-switch.js";
@@ -8,4 +9,5 @@ document.addEventListener("DOMContentLoaded", () => {
   changeHeaderColor();
   scrollTop();
   toggleSwitch();
+  animatedNav();
 });
