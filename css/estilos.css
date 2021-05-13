@@ -50,6 +50,7 @@ header {
   top: 0;
   z-index: 999;
   transition: background 200ms ease;
+  padding: 0 6.5rem;
 }
 header .header-content {
   width: 100%;
@@ -129,7 +130,6 @@ header nav ul .line {
   width: 50px;
   height: 100%;
   left: 0;
-  border-radius: 0.5rem;
   background-color: var(--bg-third);
   transition: left 200ms, width 200ms;
   z-index: -1;
@@ -148,7 +148,7 @@ header nav ul li a {
   transition: background 0.3s ease, color 0.3s ease;
 }
 header nav ul li a:hover {
-  color: #000;
+  color: #6a6a6a;
 }
 .dark header nav ul li a:hover {
   color: #fff;
@@ -746,6 +746,9 @@ body .width-desktop {
 
 /***************** RESPONSIVE  *********************/
 @media only screen and (max-width: 1080px) {
+  header nav ul li a {
+    font-size: 12px;
+  }
   section > p {
     margin: 0 64px;
   }
@@ -869,6 +872,9 @@ body .width-desktop {
   }
 }
 @media only screen and (max-width: 740px) {
+  header {
+    padding: 0 2rem;
+  }
   .container-portada .container-portada-left-blur {
     width: 70%;
   }
@@ -918,9 +924,11 @@ body .width-desktop {
   }
 }
 @media only screen and (max-width: 500px) {
+  header {
+    padding: 0 1rem;
+  }
   .header-content.width-desktop {
     width: 100%;
-    padding: 0 25px;
   }
   /* BARRA LATERAL */
   .container-portada-left-blur h1 {

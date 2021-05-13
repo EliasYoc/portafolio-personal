@@ -32,17 +32,17 @@ export default function animatedNav() {
       $navLine.style.width = `${$btnHome.offsetWidth}px`;
       // console.warn("se cumple home");
     }
-    if ($sectionAboutTop <= htmlTop) {
+    if ($sectionAboutTop - 150 <= htmlTop) {
       $navLine.style.left = `${$btnAbout.offsetLeft}px`;
       $navLine.style.width = `${$btnAbout.offsetWidth}px`;
 
       // console.warn("se cumple about");
     }
-    if ($sectionSkillsTop - 80 <= htmlTop) {
+    if ($sectionSkillsTop - 150 <= htmlTop) {
       $navLine.style.left = `${$btnSkills.offsetLeft}px`;
       $navLine.style.width = `${$btnSkills.offsetWidth}px`;
     }
-    if ($sectionProjectsTop - 80 <= htmlTop) {
+    if ($sectionProjectsTop - 150 <= htmlTop) {
       $navLine.style.left = `${$btnProjects.offsetLeft}px`;
       $navLine.style.width = `${$btnProjects.offsetWidth}px`;
     }
