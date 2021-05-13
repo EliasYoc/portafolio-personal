@@ -2,13 +2,13 @@
   --width-desktop: 80%;
   --bg-main-light-mode: #4c1036;
   --bg-second-light-mode: #71a9f7;
-  --bg-third-light-mode: #c6d8ff;
+  --bg-third-light-mode: #c6d8ff8f;
   --text-light-mode: #000;
   --bg-dark-body: #131313;
 
   --bg-main-dark-mode: #71a9f7;
   --bg-second-dark-mode: #484848;
-  --bg-third-dark-mode: #1d1d1d;
+  --bg-third-dark-mode: #1d1d1da4;
   --text-dark-mode: #d5d5d5;
   --bg-light-body: #ededed;
 }
@@ -112,7 +112,7 @@ header .switch-dark-mode span {
   color: rgb(209, 146, 8);
 }
 .switch-dark-mode span i.fa-moon {
-  color: #919191;
+  color: #ffffff;
 }
 header nav {
   height: 100%;
