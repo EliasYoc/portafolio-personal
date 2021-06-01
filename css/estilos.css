@@ -398,7 +398,7 @@ main {
   border-radius: 50%;
   left: -50%;
   bottom: -50%;
-  transition: width 0.3s ease, height 0.3s ease;
+  transition: width 0.5s ease, height 0.5s ease;
 }
 .content-skill-card:hover .background-hover {
   width: 250px;
