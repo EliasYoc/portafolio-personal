@@ -306,6 +306,7 @@ main {
   margin: 1rem;
   width: 250px;
   height: 250px;
+  background-color: transparent;
 }
 .content-about .text-about {
   background-color: var(--bg-body);
@@ -942,8 +943,6 @@ body .width-desktop {
   }
   /* ABOUT */
   .content-about img {
-    width: 100%;
-    background-color: #fff;
     padding: 15px 0;
     border-radius: 10px;
   }
