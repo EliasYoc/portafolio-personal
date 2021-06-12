@@ -298,11 +298,14 @@ main {
 /************************* ACERCA DE  *************/
 .content-about {
   display: flex;
+  align-items: center;
   margin-top: 2rem;
   flex-direction: row-reverse;
 }
 .content-about img {
-  width: 50%;
+  margin: 1rem;
+  width: 250px;
+  height: 250px;
 }
 .content-about .text-about {
   background-color: var(--bg-body);
