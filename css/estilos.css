@@ -853,9 +853,7 @@ body .width-desktop {
   .content-about {
     margin: 0 35px;
   }
-  .content-about img {
-    width: 70%;
-  }
+
   /* SKILLS */
   section > p {
     margin: 0 35px;
