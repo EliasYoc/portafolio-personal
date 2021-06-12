@@ -15,14 +15,14 @@ export default function animatedNav() {
     $btnSkills = $links[2],
     $btnProjects = $links[3],
     $btnContact = $links[4];
-  console.log($btnHome);
+  // console.log($btnHome);
   const $sections = d.querySelectorAll(".sec-scroll"),
     $sectionHomeTop = $sections[0].offsetTop,
     $sectionAboutTop = $sections[1].offsetTop,
     $sectionSkillsTop = $sections[2].offsetTop,
     $sectionProjectsTop = $sections[3].offsetTop,
     $sectionContactTop = $sections[4].offsetTop;
-  console.log($sectionContactTop);
+  // console.log($sectionContactTop);
 
   window.addEventListener("scroll", (e) => {
     const htmlTop = d.documentElement.scrollTop;
