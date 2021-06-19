@@ -714,6 +714,10 @@ main {
 .contact .contact-icons a.mail:hover {
   background-color: #0a384e;
 }
+.contact .contact-icons a.linkedin:hover {
+  background-color: #0a66c2;
+}
+
 .contact-icons a.telegram:hover i {
   color: #fff;
 }
@@ -721,6 +725,9 @@ main {
   color: #fff;
 }
 .contact-icons a.mail:hover i {
+  color: #fff;
+}
+.contact-icons a.linkedin:hover i {
   color: #fff;
 }
 .contact img {
