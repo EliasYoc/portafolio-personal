@@ -302,12 +302,12 @@ main {
   margin-top: 2rem;
   flex-direction: row-reverse;
 }
-.content-about img {
+/* .content-about img {
   margin: 1rem;
   width: 250px;
   height: 250px;
   background-color: transparent;
-}
+} */
 .content-about .text-about {
   background-color: var(--bg-body);
   padding: 15px 20px;
@@ -319,6 +319,7 @@ main {
   align-items: center;
 }
 .content-about .text-about img {
+  margin-top: 2rem;
   width: 180px;
   height: 180px;
   background-color: transparent;
