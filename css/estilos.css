@@ -196,6 +196,7 @@ header .fa-bars {
   left: 0;
   color: #fff;
   backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
   transition: clip-path 0.85s cubic-bezier(0.39, 0.575, 0.565, 1);
 
   display: flex;
