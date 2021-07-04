@@ -186,6 +186,17 @@ header .fa-bars {
   opacity: 1;
   visibility: visible;
 }
+.container-scrolldown {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container-scrolldown img {
+  width: 100px;
+  height: 100px;
+}
 /***************Barra lateral transparente  **************/
 .container-portada .container-portada-left-blur {
   width: 50%;
