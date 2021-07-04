@@ -189,13 +189,22 @@ header .fa-bars {
 .container-scrolldown {
   position: absolute;
   display: flex;
-  bottom: 0;
+  align-items: center;
+  flex-direction: column;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
 .container-scrolldown img {
   width: 100px;
   height: 100px;
+}
+.container-scrolldown > p {
+  background-color: rgba(255, 255, 255, 0.205);
+  color: #000;
+  padding: 10px;
+  border-radius: 50px;
+  backdrop-filter: blur(15px);
 }
 /***************Barra lateral transparente  **************/
 .container-portada .container-portada-left-blur {
@@ -217,6 +226,7 @@ header .fa-bars {
   clip-path: circle(0.3% at 0 50%);
   font-size: 16px;
   font-weight: 600;
+  z-index: 10;
 }
 .container-portada .container-portada-left-blur.active {
   clip-path: circle(100%);
