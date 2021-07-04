@@ -26,8 +26,6 @@
   --color-text: var(--text-dark-mode);
   --bg-body: var(--bg-dark-body);
 }
-html {
-}
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -128,11 +126,12 @@ header nav ul {
 header nav ul .line {
   position: absolute;
   width: 50px;
-  height: 100%;
+  height: 50%;
   left: 0;
   background-color: var(--bg-third);
   transition: left 200ms, width 200ms;
   z-index: -1;
+  border-radius: 50px;
 }
 header nav ul li {
   height: 100%;
@@ -813,6 +812,7 @@ body .width-desktop {
     position: fixed;
     top: calc(100vh - 60px);
   }
+
   header .logo span {
     text-shadow: 0px 1px 1px rgba(191, 191, 191, 0.5);
   }
@@ -836,6 +836,9 @@ body .width-desktop {
   }
   header nav ul {
     flex-direction: column;
+  }
+  header nav ul .line {
+    background: none;
   }
   header nav ul li {
     width: 100%;

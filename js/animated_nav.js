@@ -1,4 +1,5 @@
 const d = document;
+// creo que aqui puedo usar mejor insersection observer 🤔
 export default function animatedNav() {
   const $navLine = d.querySelector(".line");
   $navLine.style.width = "67px";

@@ -1,137 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
-    <link rel="preload" href="css/estilos.css" as="style" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Righteous&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/6915124d50.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body class="light">
-    <header id="header">
-      <div class="header-content width-desktop">
-        <div class="logo" id="btn-top">
-          <p>Elías<span>Yoc</span></p>
-        </div>
-        <div class="switch-dark-mode">
-          <div class="toggle-switch"></div>
-          <div class="icons">
-            <span><i class="fas fa-sun"></i></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="preload" href="css/estilos.css" as="style" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Righteous&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/6915124d50.js" crossorigin="anonymous"></script>
+</head>
 
-            <span><i class="fas fa-moon"></i></span>
-          </div>
-        </div>
-        <nav id="nav">
-          <ul>
-            <div class="line"></div>
-            <li><a href="#" class="toggle">Inicio</a></li>
-            <li><a href="#acerca-de" class="toggle">Acerca de mi</a></li>
-            <li><a href="#skills" class="toggle">Skills</a></li>
-            <li><a href="#proyectos" class="toggle">Proyectos</a></li>
-            <li><a href="#contacto" class="toggle">Contacto</a></li>
-          </ul>
-        </nav>
-        <i class="fas fa-bars" id="btn-bars"></i>
+<body class="light">
+  <header id="header">
+    <div class="header-content width-desktop">
+      <div class="logo" id="btn-top">
+        <p>Elías<span>Yoc</span></p>
       </div>
-    </header>
-    <div class="container-portada sec-scroll">
-      <img
-        loading="lazy"
-        src="img/portada.jpg"
-        alt="lucecitas"
-        class="active"
-      />
-      <img loading="lazy" src="img/portadawebp.jpg" alt="laptop" />
-      <div class="container-portada-left-blur" id="blur-panel">
-        <div class="container-portada-card">
-          <img loading="lazy" src="img/portada4.jpg" alt="foto" />
-          <h1>
-            👋 Hola me llamo <span>Elias Yoc</span>, front-end developer jr.
-          </h1>
+      <div class="switch-dark-mode">
+        <div class="toggle-switch"></div>
+        <div class="icons">
+          <span><i class="fas fa-sun"></i></span>
+
+          <span><i class="fas fa-moon"></i></span>
         </div>
       </div>
-      <div class="container-portada-btn" id="btn-dev">
-        <i class="fas fa-angle-right"></i>
+      <nav id="nav">
+        <ul>
+          <div class="line"></div>
+          <li><a href="#" class="toggle">Inicio</a></li>
+          <li><a href="#acerca-de" class="toggle">Acerca de mi</a></li>
+          <li><a href="#skills" class="toggle">Skills</a></li>
+          <li><a href="#proyectos" class="toggle">Proyectos</a></li>
+          <li><a href="#contacto" class="toggle">Contacto</a></li>
+        </ul>
+      </nav>
+      <i class="fas fa-bars" id="btn-bars"></i>
+    </div>
+  </header>
+  <div class="container-portada sec-scroll">
+    <img loading="lazy" src="img/gradientcompress.jpg" alt="lucecitas" class="active" />
+    <img loading="lazy" src="img/portadawebp.jpg" alt="laptop" />
+    <div class="container-portada-left-blur" id="blur-panel">
+      <div class="container-portada-card">
+        <img loading="lazy" src="img/portada4.jpg" alt="foto" />
+        <h1>
+          👋 Hola me llamo <span>Elias Yoc</span>, front-end developer jr.
+        </h1>
       </div>
     </div>
-    <div class="container-all width-desktop">
-      <main>
-        <section id="acerca-de" class="sec-scroll">
-          <h2>Acerca de mí</h2>
-          <div class="content-about">
-            <div class="text-about">
+    <div class="container-portada-btn" id="btn-dev">
+      <i class="fas fa-angle-right"></i>
+    </div>
+  </div>
+  <div class="container-all width-desktop">
+    <main>
+      <section id="acerca-de" class="sec-scroll">
+        <h2>Acerca de mí</h2>
+        <div class="content-about">
+          <div class="text-about">
+            <div class="top-line"></div>
+            <p>
+              Mexicano, de Escobedo Nuevo León, soy recién egresado y estoy
+              comenzando con el camino del desarrollo web 🌐, interesado en
+              aprender nuevas herramientas que me ayudarán a mejorar y renovar
+              tanto páginas web como mi experiencia. De manera autodidacta me
+              estoy formando como "web developer", realizando proyectos en
+              programación y diseño web. 💻
+            </p>
+            <img loading="lazy" src="img/Developer-512px-19.gif" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="sec-scroll">
+        <h2>Skills</h2>
+        <p>
+          Estas son las habilidades que he empezado a manejar, que por ahora
+          mis practicas han sido desarrolladas por medio HTML, CSS y
+          JavaScript, además he comenzado el aprendizaje con ReactJS de manera
+          autodidacta y las siguientes herramientas son las que continuaré
+          aprendiendo.
+        </p>
+        <div class="content-skills">
+          <div class="content-skills-cards">
+            <div class="content-skill-card card-html">
               <div class="top-line"></div>
-              <p>
-                Mexicano, de Escobedo Nuevo León, soy recién egresado y estoy
-                comenzando con el camino del desarrollo web 🌐, interesado en
-                aprender nuevas herramientas que me ayudarán a mejorar y renovar
-                tanto páginas web como mi experiencia. De manera autodidacta me
-                estoy formando como "web developer", realizando proyectos en
-                programación y diseño web. 💻
-              </p>
-              <img loading="lazy" src="img/Developer-512px-19.gif" alt="" />
+              <i class="fab fa-html5"></i>
+              <h3>HTML</h3>
+              <div class="background-hover"></div>
+            </div>
+            <div class="content-skill-card card-css">
+              <div class="top-line"></div>
+              <i class="fab fa-css3-alt"></i>
+              <h3>CSS</h3>
+              <div class="background-hover"></div>
+            </div>
+            <div class="content-skill-card card-js">
+              <div class="top-line"></div>
+              <i class="fab fa-js-square"></i>
+              <h3>JavaScript</h3>
+              <div class="background-hover"></div>
+            </div>
+            <div class="content-skill-card card-react">
+              <div class="top-line"></div>
+              <i class="fab fa-react"></i>
+              <h3>React</h3>
+              <div class="background-hover"></div>
+            </div>
+            <div class="content-skill-card card-sass">
+              <div class="top-line"></div>
+              <i class="fab fa-sass"></i>
+              <h3>Sass</h3>
+              <div class="background-hover"></div>
+            </div>
+            <div class="content-skill-card card-git">
+              <div class="top-line"></div>
+              <i class="fab fa-git-alt"></i>
+              <h3>Git</h3>
+              <div class="background-hover"></div>
             </div>
           </div>
-        </section>
-        <section id="skills" class="sec-scroll">
-          <h2>Skills</h2>
-          <p>
-            Estas son las habilidades que he empezado a manejar, que por ahora
-            mis practicas han sido desarrolladas por medio HTML, CSS y
-            JavaScript, además he comenzado el aprendizaje con ReactJS de manera
-            autodidacta y las siguientes herramientas son las que continuaré
-            aprendiendo.
-          </p>
-          <div class="content-skills">
-            <div class="content-skills-cards">
-              <div class="content-skill-card card-html">
-                <div class="top-line"></div>
-                <i class="fab fa-html5"></i>
-                <h3>HTML</h3>
-                <div class="background-hover"></div>
-              </div>
-              <div class="content-skill-card card-css">
-                <div class="top-line"></div>
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS</h3>
-                <div class="background-hover"></div>
-              </div>
-              <div class="content-skill-card card-js">
-                <div class="top-line"></div>
-                <i class="fab fa-js-square"></i>
-                <h3>JavaScript</h3>
-                <div class="background-hover"></div>
-              </div>
-              <div class="content-skill-card card-react">
-                <div class="top-line"></div>
-                <i class="fab fa-react"></i>
-                <h3>React</h3>
-                <div class="background-hover"></div>
-              </div>
-              <div class="content-skill-card card-sass">
-                <div class="top-line"></div>
-                <i class="fab fa-sass"></i>
-                <h3>Sass</h3>
-                <div class="background-hover"></div>
-              </div>
-              <div class="content-skill-card card-git">
-                <div class="top-line"></div>
-                <i class="fab fa-git-alt"></i>
-                <h3>Git</h3>
-                <div class="background-hover"></div>
-              </div>
-            </div>
-            <!-- <div class="skill-bars">
+          <!-- <div class="skill-bars">
                         <div class="bar">
                             <div class="info">
                                 <span>HTML</span>
@@ -151,212 +142,159 @@
                             <div class="progress-line js"><span></span></div>
                         </div>
                     </div> -->
+        </div>
+      </section>
+      <section id="proyectos" class="sec-scroll">
+        <h2>Proyectos</h2>
+        <div class="grid-projects">
+          <div class="grid-card">
+            <img loading="lazy" src="img/rimorty.PNG" alt="" />
+            <h3>Página Rick & Morty</h3>
+            <div class="blur-bg-description">
+              <div class="blur-bg-text">
+                <p>
+                  Proyecto de listado de cartas de los personajes, donde se
+                  podrá realizar búsquedas
+                </p>
+              </div>
+              <div class="blur-bg-links">
+                <a href="https://rimorty.netlify.app/" target="_blank">
+                  Abrir
+                </a>
+                <a href="https://github.com/EliasYoc/desarrollo-rick-morty" target="_blank" class="color-second">
+                  Github</a>
+              </div>
+            </div>
           </div>
-        </section>
-        <section id="proyectos" class="sec-scroll">
-          <h2>Proyectos</h2>
-          <div class="grid-projects">
-            <div class="grid-card">
-              <img loading="lazy" src="img/rimorty.PNG" alt="" />
-              <h3>Página Rick & Morty</h3>
-              <div class="blur-bg-description">
-                <div class="blur-bg-text">
-                  <p>
-                    Proyecto de listado de cartas de los personajes, donde se
-                    podrá realizar búsquedas
-                  </p>
-                </div>
-                <div class="blur-bg-links">
-                  <a href="https://rimorty.netlify.app/" target="_blank">
-                    Abrir
-                  </a>
-                  <a
-                    href="https://github.com/EliasYoc/desarrollo-rick-morty"
-                    target="_blank"
-                    class="color-second"
-                  >
-                    Github</a
-                  >
-                </div>
+          <div class="grid-card">
+            <img loading="lazy" src="img/Diseño-web.JPG" alt="" />
+            <h3>Diseño red social</h3>
+            <div class="blur-bg-description">
+              <div class="blur-bg-text">
+                <p>Diseño de una red social basado en Facebook.</p>
+                <p>
+                  Se visualizará un perfil donde se podrá simular una
+                  publicación, incluye el diseño de la sección de noticias en
+                  la barra lateral y de la sección de historias.
+                </p>
+                <p>En el celular, la barra lateral de noticias se oculta</p>
+              </div>
+              <div class="blur-bg-links">
+                <a href="https://pagiyoc.netlify.app/" target="_blank">
+                  Abrir
+                </a>
+                <a href="https://github.com/EliasYoc/practica-flexbox.git" target="_blank" class="color-second">
+                  Github</a>
               </div>
             </div>
-            <div class="grid-card">
-              <img loading="lazy" src="img/Diseño-web.JPG" alt="" />
-              <h3>Diseño red social</h3>
-              <div class="blur-bg-description">
-                <div class="blur-bg-text">
-                  <p>Diseño de una red social basado en Facebook.</p>
-                  <p>
-                    Se visualizará un perfil donde se podrá simular una
-                    publicación, incluye el diseño de la sección de noticias en
-                    la barra lateral y de la sección de historias.
-                  </p>
-                  <p>En el celular, la barra lateral de noticias se oculta</p>
-                </div>
-                <div class="blur-bg-links">
-                  <a href="https://pagiyoc.netlify.app/" target="_blank">
-                    Abrir
-                  </a>
-                  <a
-                    href="https://github.com/EliasYoc/practica-flexbox.git"
-                    target="_blank"
-                    class="color-second"
-                  >
-                    Github</a
-                  >
-                </div>
+          </div>
+          <div class="grid-card">
+            <img loading="lazy" src="img/pokeapi.JPG" alt="" />
+            <h3>Pokedex</h3>
+            <div class="blur-bg-description">
+              <div class="blur-bg-text">
+                <p>
+                  En esta página podrás ver cartas de pokemón al azar
+                  actualizando la página.
+                </p>
+                <p>
+                  En la tarjeta del pokemón se visualizará una información
+                  específica
+                </p>
+              </div>
+              <div class="blur-bg-links">
+                <a href="https://actualizar-pokemon.netlify.app/" target="_blank">
+                  Abrir
+                </a>
+                <a href="https://github.com/EliasYoc/pokeapi-card.git" target="_blank" class="color-second">
+                  Github</a>
               </div>
             </div>
-            <div class="grid-card">
-              <img loading="lazy" src="img/pokeapi.JPG" alt="" />
-              <h3>Pokedex</h3>
-              <div class="blur-bg-description">
-                <div class="blur-bg-text">
-                  <p>
-                    En esta página podrás ver cartas de pokemón al azar
-                    actualizando la página.
-                  </p>
-                  <p>
-                    En la tarjeta del pokemón se visualizará una información
-                    específica
-                  </p>
-                </div>
-                <div class="blur-bg-links">
-                  <a
-                    href="https://actualizar-pokemon.netlify.app/"
-                    target="_blank"
-                  >
-                    Abrir
-                  </a>
-                  <a
-                    href="https://github.com/EliasYoc/pokeapi-card.git"
-                    target="_blank"
-                    class="color-second"
-                  >
-                    Github</a
-                  >
-                </div>
+          </div>
+          <div class="grid-card">
+            <img loading="lazy" src="img/galeria-estatica.JPG" alt="" />
+            <h3>Galería modo oscuro</h3>
+            <div class="blur-bg-description">
+              <div class="blur-bg-text">
+                <p>Es una página estática como tienda de imágenes.</p>
+                <p>
+                  Se podrá visualizar la cuadrícula de imagenes como una
+                  tienda, además de contar con la función de modo oscuro
+                </p>
+              </div>
+              <div class="blur-bg-links">
+                <a href="https://galeria-darkmode.netlify.app/" target="_blank">
+                  Abrir
+                </a>
+                <a href="https://github.com/EliasYoc/EjemploModoOscuro.git" target="_blank" class="color-second">
+                  Github</a>
               </div>
             </div>
-            <div class="grid-card">
-              <img loading="lazy" src="img/galeria-estatica.JPG" alt="" />
-              <h3>Galería modo oscuro</h3>
-              <div class="blur-bg-description">
-                <div class="blur-bg-text">
-                  <p>Es una página estática como tienda de imágenes.</p>
-                  <p>
-                    Se podrá visualizar la cuadrícula de imagenes como una
-                    tienda, además de contar con la función de modo oscuro
-                  </p>
-                </div>
-                <div class="blur-bg-links">
-                  <a
-                    href="https://galeria-darkmode.netlify.app/"
-                    target="_blank"
-                  >
-                    Abrir
-                  </a>
-                  <a
-                    href="https://github.com/EliasYoc/EjemploModoOscuro.git"
-                    target="_blank"
-                    class="color-second"
-                  >
-                    Github</a
-                  >
-                </div>
+          </div>
+          <div class="grid-card">
+            <img loading="lazy" src="img/todolist.JPG" alt="foto de curso mircha" />
+            <h3>Lista de quehacer</h3>
+            <div class="blur-bg-description">
+              <div class="blur-bg-text">
+                <p>
+                  Se mostrará la pagina como una lista de tareas o pendientes.
+                </p>
+                <p>
+                  Las tareas que se escriban se podran agregar, tachar y
+                  eliminar
+                </p>
+              </div>
+              <div class="blur-bg-links">
+                <a href="https://lista-todo.netlify.app/" target="_blank">
+                  Abrir
+                </a>
+                <a href="https://github.com/EliasYoc/todo-list" target="_blank" class="color-second">
+                  Github</a>
               </div>
             </div>
-            <div class="grid-card">
-              <img
-                loading="lazy"
-                src="img/todolist.JPG"
-                alt="foto de curso mircha"
-              />
-              <h3>Lista de quehacer</h3>
-              <div class="blur-bg-description">
-                <div class="blur-bg-text">
-                  <p>
-                    Se mostrará la pagina como una lista de tareas o pendientes.
-                  </p>
-                  <p>
-                    Las tareas que se escriban se podran agregar, tachar y
-                    eliminar
-                  </p>
-                </div>
-                <div class="blur-bg-links">
-                  <a href="https://lista-todo.netlify.app/" target="_blank">
-                    Abrir
-                  </a>
-                  <a
-                    href="https://github.com/EliasYoc/todo-list"
-                    target="_blank"
-                    class="color-second"
-                  >
-                    Github</a
-                  >
-                </div>
+          </div>
+          <div class="grid-card">
+            <img loading="lazy" src="img/lista-pokemon.JPG" alt="foto de curso mircha" />
+            <h3>Lista pokemon</h3>
+            <div class="blur-bg-description">
+              <div class="blur-bg-text">
+                <p>Mostrará una lista de 50 pokemón.</p>
+                <p>
+                  Al seleccionar un pokemon de la lista se reflejará la
+                  información en la pokedex
+                </p>
+              </div>
+              <div class="blur-bg-links">
+                <a href="https://pokeyoc.netlify.app/" target="_blank">
+                  Abrir
+                </a>
+                <a href="https://github.com/EliasYoc/pokeapi-yoc" target="_blank" class="color-second">
+                  Github</a>
               </div>
             </div>
-            <div class="grid-card">
-              <img
-                loading="lazy"
-                src="img/lista-pokemon.JPG"
-                alt="foto de curso mircha"
-              />
-              <h3>Lista pokemon</h3>
-              <div class="blur-bg-description">
-                <div class="blur-bg-text">
-                  <p>Mostrará una lista de 50 pokemón.</p>
-                  <p>
-                    Al seleccionar un pokemon de la lista se reflejará la
-                    información en la pokedex
-                  </p>
-                </div>
-                <div class="blur-bg-links">
-                  <a href="https://pokeyoc.netlify.app/" target="_blank">
-                    Abrir
-                  </a>
-                  <a
-                    href="https://github.com/EliasYoc/pokeapi-yoc"
-                    target="_blank"
-                    class="color-second"
-                  >
-                    Github</a
-                  >
-                </div>
+          </div>
+          <div class="grid-card">
+            <img loading="lazy" src="img/paises.JPG" alt="foto de curso mircha" />
+            <h3>Información de países</h3>
+            <div class="blur-bg-description">
+              <div class="blur-bg-text">
+                <p>Mostrará una tabla con los países.</p>
+                <p>
+                  Podrás buscar los países, filtarlos por región y activar el
+                  modo oscuro
+                </p>
+              </div>
+              <div class="blur-bg-links">
+                <a href="https://paisesyoc.netlify.app/" target="_blank">
+                  Abrir
+                </a>
+                <a href="https://github.com/EliasYoc/MiProyectoPaises" target="_blank" class="color-second">
+                  Github</a>
               </div>
             </div>
-            <div class="grid-card">
-              <img
-                loading="lazy"
-                src="img/paises.JPG"
-                alt="foto de curso mircha"
-              />
-              <h3>Información de países</h3>
-              <div class="blur-bg-description">
-                <div class="blur-bg-text">
-                  <p>Mostrará una tabla con los países.</p>
-                  <p>
-                    Podrás buscar los países, filtarlos por región y activar el
-                    modo oscuro
-                  </p>
-                </div>
-                <div class="blur-bg-links">
-                  <a href="https://paisesyoc.netlify.app/" target="_blank">
-                    Abrir
-                  </a>
-                  <a
-                    href="https://github.com/EliasYoc/MiProyectoPaises"
-                    target="_blank"
-                    class="color-second"
-                  >
-                    Github</a
-                  >
-                </div>
-              </div>
-            </div>
+          </div>
 
-            <!-- <div class="grid-card">
+          <!-- <div class="grid-card">
                         <img loading="lazy" src="img/curso-mircha.JPG" alt="foto de curso mircha">
                         <h3>Formación como desarrollador</h3>
                         <div class="blur-bg-description">
@@ -369,38 +307,29 @@
                             </div>
                         </div>
                     </div> -->
-          </div>
-        </section>
-      </main>
-      <aside></aside>
-    </div>
-    <footer>
-      <div class="container-footer width-desktop sec-scroll">
-        <div id="contacto" class="contact">
-          <h2>Contacto</h2>
-          <div class="contact-icons">
-            <a class="telegram" href="https://t.me/eliasyoc" target="_blank"
-              ><i class="fab fa-telegram-plane"></i
-            ></a>
-            <a class="github" href="https://github.com/EliasYoc" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a class="mail" href="mailto:eliyoc_97@hotmail.com" target="_blank"
-              ><i class="fas fa-envelope"></i
-            ></a>
-            <a
-              class="linkedin"
-              href="https://www.linkedin.com/in/elias-yoc-garc%C3%ADa/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-          <img loading="lazy" src="img/footer.gif" alt="sticker telegram" />
         </div>
-        <p>&copy; 2021 Elias Yoc</p>
+      </section>
+    </main>
+    <aside></aside>
+  </div>
+  <footer>
+    <div class="container-footer width-desktop sec-scroll">
+      <div id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-icons">
+          <a class="telegram" href="https://t.me/eliasyoc" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+          <a class="github" href="https://github.com/EliasYoc" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="mail" href="mailto:eliyoc_97@hotmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a class="linkedin" href="https://www.linkedin.com/in/elias-yoc-garc%C3%ADa/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <img loading="lazy" src="img/footer.gif" alt="sticker telegram" />
       </div>
-    </footer>
-    <script src="js/main.js" type="module"></script>
-  </body>
+      <p>&copy; 2021 Elias Yoc</p>
+    </div>
+  </footer>
+  <script src="js/main.js" type="module"></script>
+</body>
+
 </html>
