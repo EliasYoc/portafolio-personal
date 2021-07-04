@@ -56,6 +56,7 @@ header .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
 }
 header .logo p {
   color: #fff;
@@ -207,7 +208,7 @@ header .fa-bars {
   backdrop-filter: blur(15px);
 }
 /***************Barra lateral transparente  **************/
-/* creo que el drop-filter alenta el celular al usarlo con transition */
+/* nose si el drop-filter alenta el celular al usarlo con transition */
 .container-portada .container-portada-left-blur {
   width: 50%;
   height: 100%;
@@ -305,6 +306,7 @@ main {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  transition: 0.3s;
 }
 .container-all section > h2 {
   background-color: var(--bg-body);
@@ -399,20 +401,20 @@ main {
   position: relative;
   z-index: 5;
 }
-.content-skills .content-skill-card i.fa-html5 {
+i.fa-html5 {
   color: #e34c26;
 }
-.content-skills .content-skill-card i.fa-css3-alt {
+i.fa-css3-alt {
   color: #2965f1;
 }
-.content-skills .content-skill-card i.fa-js-square {
+i.fa-js-square {
   color: #f0db4f;
   background-color: #000;
 }
-.content-skills .content-skill-card i.fa-react {
+i.fa-react {
   color: #60dafb;
 }
-.content-skills .content-skill-card i.fa-sass {
+i.fa-sass {
   color: #cc6699;
 }
 .content-skills .content-skill-card i.fa-git-alt {
@@ -599,6 +601,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  transition: 0.3s;
 }
 .grid-projects .grid-card {
   height: 200px;
@@ -651,7 +654,15 @@ main {
 .grid-card:hover .blur-bg-description {
   transform: translateY(0);
 }
-
+.herramientas-dev {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.herramientas-dev i.fa-css3-alt {
+  color: rgb(115, 160, 212);
+}
 .grid-card .blur-bg-description .blur-bg-text {
   margin-bottom: 15px;
   /* background-color: red; */
@@ -815,6 +826,7 @@ body .width-desktop {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin-bottom: 2rem;
+    transition: 0.3s;
   }
   .content-skills .content-skills-cards .content-skill-card {
     width: 100%;
@@ -853,13 +865,13 @@ body .width-desktop {
     padding-bottom: 60px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(13px);
-    opacity: 0;
+    opacity: 1;
     transform: translateY(100vh);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease;
+
     z-index: -1;
   }
   header nav.active {
-    opacity: 1;
     transform: translateY(0);
   }
   header nav ul {
