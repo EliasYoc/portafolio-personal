@@ -207,6 +207,7 @@ header .fa-bars {
   backdrop-filter: blur(15px);
 }
 /***************Barra lateral transparente  **************/
+/* creo que el drop-filter alenta el celular al usarlo con transition */
 .container-portada .container-portada-left-blur {
   width: 50%;
   height: 100%;
