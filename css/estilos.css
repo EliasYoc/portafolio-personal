@@ -908,6 +908,7 @@ body .width-desktop {
     left: 50%;
     transform: translateX(-50%);
     clip-path: none;
+    transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   .container-portada .container-portada-left-blur h1,
   .container-portada .container-portada-left-blur span {
