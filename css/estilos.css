@@ -900,7 +900,22 @@ body .width-desktop {
   header .fa-bars {
     display: block;
   }
-
+  /* barra lateral */
+  .container-portada .container-portada-left-blur {
+    border-radius: 20px;
+    top: 10%;
+    height: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: none;
+  }
+  .container-portada .container-portada-left-blur h1,
+  .container-portada .container-portada-left-blur span {
+    font-size: 20px;
+  }
+  .container-portada .container-portada-btn {
+    display: none;
+  }
   /* ABOUT */
   .content-about {
     margin: 0 35px;
