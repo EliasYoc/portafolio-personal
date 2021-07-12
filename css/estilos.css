@@ -658,10 +658,15 @@ i.fa-sass {
   font-size: 20px;
   display: flex;
   align-items: center;
-  gap: 10px;
+}
+.herramientas-dev i {
+  margin-right: 10px;
 }
 .herramientas-dev i.fa-css3-alt {
   color: rgb(115, 160, 212);
+}
+.herramientas-dev i.fa-js-square {
+  background-color: transparent;
 }
 .grid-card .blur-bg-description .blur-bg-text {
   margin-bottom: 15px;
