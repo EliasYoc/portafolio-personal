@@ -9,7 +9,6 @@
   <meta name="description" content="Portafolio personal para mis proyectos." />
   <meta name="author" content="Elias Yoc" />
 
-  <!-- -------------------------open graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Portfolio personal">
   <meta property="og:url" content="https://eliasyoc.netlify.app/">
@@ -17,7 +16,7 @@
   <meta property=" og:image"
     content="https://user-images.githubusercontent.com/64809211/127224129-36f4c2e3-753e-45be-8c08-76d717e1cd42.png">
   <meta property="og:site_name" content="portfolio">
-  <!-- -------------------Twitter------------------- -->
+
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://eliasyoc.netlify.app/" />
   <meta property="twitter:title" content="Portfolio personal" />
@@ -27,7 +26,7 @@
   <meta name="twitter:image:alt" content="Portfolio" />
 
   <title>Portafolio</title>
-  <link rel=" preload" href="css/estilos.css" as="style" />
+  <link rel="preload" href="css/estilos.css" as="style" />
   <link rel="stylesheet" href="css/estilos.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Righteous&display=swap"
@@ -64,18 +63,17 @@
   </header>
   <div class="container-portada sec-scroll">
     <img loading="lazy" src="img/gradientcompress.jpg" alt="lucecitas" class="active" />
-    <img loading="lazy" src="img/portadawebp.jpg" alt="laptop" />
     <div class="container-portada-left-blur" id="blur-panel">
       <div class="container-portada-card">
-        <img loading="lazy" src="img/portada4.jpg" alt="foto" />
+        <div class="wrap-img">
+          <img loading="lazy" src="img/portada4.jpg" alt="foto" />
+        </div>
         <h1>
           👋 Hola me llamo <span>Elias Yoc</span>, front-end developer jr.
         </h1>
       </div>
     </div>
-    <div class="container-portada-btn" id="btn-dev">
-      <i class="fas fa-angle-right"></i>
-    </div>
+
     <div class="container-scrolldown">
       <img src="img/scroll-down.gif" alt="desliza abajo">
       <p>Desliza</p>
@@ -89,9 +87,9 @@
           <div class="text-about">
             <div class="top-line"></div>
             <p>
-              Mexicano, de Escobedo Nuevo León, egresado y estoy
+              Mexicano, de Escobedo Nuevo León,
               comenzando con el camino del desarrollo web 🌐, interesado en
-              aprender nuevas herramientas que me ayudarán a mejorar habilidades
+              aprender nuevas herramientas para mejorar habilidades
               en proyectos web y en aumentar mi experiencia. De manera autodidacta me
               estoy formando como "web developer", realizando proyectos en
               programación y diseño web. 💻
@@ -112,62 +110,37 @@
         <div class="content-skills">
           <div class="content-skills-cards">
             <div class="content-skill-card card-html">
-              <div class="top-line"></div>
               <i class="fab fa-html5"></i>
               <h3>HTML</h3>
               <div class="background-hover"></div>
             </div>
             <div class="content-skill-card card-css">
-              <div class="top-line"></div>
               <i class="fab fa-css3-alt"></i>
               <h3>CSS</h3>
               <div class="background-hover"></div>
             </div>
             <div class="content-skill-card card-js">
-              <div class="top-line"></div>
               <i class="fab fa-js-square"></i>
               <h3>JavaScript</h3>
               <div class="background-hover"></div>
             </div>
             <div class="content-skill-card card-react">
-              <div class="top-line"></div>
               <i class="fab fa-react"></i>
               <h3>React</h3>
               <div class="background-hover"></div>
             </div>
             <div class="content-skill-card card-sass">
-              <div class="top-line"></div>
               <i class="fab fa-sass"></i>
               <h3>Sass</h3>
               <div class="background-hover"></div>
             </div>
             <div class="content-skill-card card-git">
-              <div class="top-line"></div>
               <i class="fab fa-git-alt"></i>
               <h3>Git</h3>
               <div class="background-hover"></div>
             </div>
           </div>
-          <!-- <div class="skill-bars">
-                        <div class="bar">
-                            <div class="info">
-                                <span>HTML</span>
-                            </div>
-                            <div class="progress-line html"><span></span></div>
-                        </div>
-                        <div class="bar">
-                            <div class="info">
-                                <span>CSS</span>
-                            </div>
-                            <div class="progress-line css"><span></span></div>
-                        </div>
-                        <div class="bar">
-                            <div class="info">
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="progress-line js"><span></span></div>
-                        </div>
-                    </div> -->
+
         </div>
       </section>
       <section id="proyectos" class="sec-scroll">
@@ -380,19 +353,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="grid-card">
-                        <img loading="lazy" src="img/curso-mircha.JPG" alt="foto de curso mircha">
-                        <h3>Formación como desarrollador</h3>
-                        <div class="blur-bg-description">
-                            <div class="blur-bg-text">
-                                <p>En esta página se veran mis prácticas en programación</p>
-                                <p>Hecha por el docente Jonathan Mircha que ayuda en Youtube a las personas interesadas en la programación web a mejorar la experiencia</p>
-                            </div>
-                            <div class="blur-bg-links">
-                                <a href="https://cursos-jon.netlify.app/" target="_blank"> Abrir </a>
-                            </div>
-                        </div>
-                    </div> -->
+
         </div>
       </section>
     </main>
