@@ -267,6 +267,7 @@ main {
   align-items: center;
 }
 .container-all section {
+  position: relative;
   margin-top: 4rem;
   padding: 4rem 2rem;
   background-color: var(--bg-third);
@@ -276,6 +277,7 @@ main {
   flex-direction: column;
   border-radius: 10px;
   transition: 0.3s;
+  overflow: hidden;
 }
 .container-all section > h2 {
   background-color: var(--bg-body);
