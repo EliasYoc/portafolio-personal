@@ -239,6 +239,7 @@ header .fa-bars {
 }
 .wrap-img {
   display: flex;
+  align-items: center;
   margin-right: 80px;
 }
 .container-portada .container-portada-card img {
@@ -752,7 +753,7 @@ body .width-desktop {
   header .fa-bars {
     display: block;
   }
-  /* barra lateral */
+  /* presentacion blur */
   .container-portada .container-portada-left-blur {
     top: 10%;
     height: 45%;
@@ -763,6 +764,9 @@ body .width-desktop {
   }
   .container-portada .container-portada-card {
     flex-direction: column;
+  }
+  .wrap-img {
+    margin: 0;
   }
   .container-portada .container-portada-left-blur h1,
   .container-portada .container-portada-left-blur span {
