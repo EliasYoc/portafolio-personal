@@ -13,6 +13,7 @@
   --bg-light-body: #ededed;
 }
 .light {
+  --main-bg-gradient: #3886f2;
   --bg-main: var(--bg-main-light-mode);
   --bg-second: var(--bg-second-light-mode);
   --bg-third: var(--bg-third-light-mode);
@@ -20,6 +21,7 @@
   --bg-body: var(--bg-light-body);
 }
 .dark {
+  --main-bg-gradient: rgb(76, 0, 255);
   --bg-main: var(--bg-main-dark-mode);
   --bg-second: var(--bg-second-dark-mode);
   --bg-third: var(--bg-third-dark-mode);
@@ -39,6 +41,15 @@ body {
   font-size: 14px;
   transition: background 200ms ease;
 }
+/* Para hacer el texto gradiente */
+/* .gradient-bg{
+background: linear-gradient(40deg, var(--main-bg-gradient),rgb(148, 3, 177));
+}
+.gradient-text{
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
 /******** PARTE DEL ENCABEZADP  ****************/
 header {
   width: 100%;
@@ -61,7 +72,6 @@ header .logo p {
   color: #fff;
   font-size: 24px;
   font-family: "Righteous", cursive;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -430,7 +440,7 @@ i.fa-sass {
   background-color: #60dafb;
 }
 .content-skill-card.card-redux .background-hover {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(151, 151, 151);
 }
 .dark .content-skill-card.card-react:hover h3 {
   color: #000;
@@ -901,4 +911,3 @@ body .width-desktop {
     padding: 5px 20px;
   }
 }
-           
