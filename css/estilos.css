@@ -307,12 +307,7 @@ main {
   margin-top: 2rem;
   flex-direction: row-reverse;
 }
-/* .content-about img {
-  margin: 1rem;
-  width: 250px;
-  height: 250px;
-  background-color: transparent;
-} */
+
 .content-about .text-about {
   background-color: var(--bg-body);
   padding: 15px 20px;
@@ -323,11 +318,14 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.content-about .text-about img {
+.sec-scroll .img-gif {
   margin-top: 2rem;
   width: 180px;
   height: 180px;
   background-color: transparent;
+}
+.sec-scroll .gif {
+  width: 200px;
 }
 .top-line {
   background-color: var(--bg-main);
@@ -644,10 +642,6 @@ i.fa-sass {
 }
 .contact-icons a.linkedin:hover i {
   color: #fff;
-}
-.contact img {
-  width: 200px;
-  height: 200px;
 }
 
 /****************PIE DE LA PAGINA  ************/
