@@ -205,7 +205,7 @@ header .fa-bars {
   left: 50%;
   transform: translateX(-50%);
 }
-.container-scrolldown img {
+.container-scrolldown > video {
   width: 100px;
   height: 100px;
 }
@@ -397,6 +397,7 @@ i.fa-react {
   color: #60dafb;
 }
 .icon-redux {
+  height: 50px;
   width: 50px;
 }
 i.fa-sass {
