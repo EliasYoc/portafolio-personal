@@ -2,18 +2,22 @@
   --width-desktop: 80%;
   --bg-main-light-mode: #4c1036;
   --bg-second-light-mode: #71a9f7;
+  --bg-header-light:#71a9f7b6;
   --bg-third-light-mode: #c6d8ff8f;
   --text-light-mode: #000;
   --bg-dark-body: #131313;
 
   --bg-main-dark-mode: #71a9f7;
   --bg-second-dark-mode: #484848;
+    --bg-header-dark:#484848b8;
+
   --bg-third-dark-mode: #1d1d1da4;
   --text-dark-mode: #d5d5d5;
   --bg-light-body: #ededed;
 }
 .light {
   --main-bg-gradient: #3886f2;
+    --bg-header: var(--bg-header-light);
   --bg-main: var(--bg-main-light-mode);
   --bg-second: var(--bg-second-light-mode);
   --bg-third: var(--bg-third-light-mode);
@@ -22,6 +26,7 @@
 }
 .dark {
   --main-bg-gradient: rgb(76, 0, 255);
+    --bg-header: var(--bg-header-dark);
   --bg-main: var(--bg-main-dark-mode);
   --bg-second: var(--bg-second-dark-mode);
   --bg-third: var(--bg-third-dark-mode);
@@ -55,6 +60,7 @@ header {
   width: 100%;
   height: 60px;
   position: fixed;
+  backdrop-filter: blur(8px);
   top: 0;
   z-index: 999;
   transition: background 200ms ease;
@@ -722,22 +728,25 @@ body .width-desktop {
     margin-bottom: 60px;
   }
   header {
+    background: var(--bg-second)!important;
     position: fixed;
     top: calc(100vh - 60px);
+    backdrop-filter: initial;
   }
 
   header .logo span {
     text-shadow: 0px 1px 1px rgba(191, 191, 191, 0.5);
   }
   header nav {
+    background-color: var(--bg-second);
     position: fixed;
     top: 100vh;
     left: 0;
     width: 100%;
     height: 100%;
     padding-bottom: 60px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(13px);
+    /* backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(13px); */
     opacity: 1;
     transform: translateY(100vh);
     transition: transform 0.3s ease, top 0.3s ease;

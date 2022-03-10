@@ -6,7 +6,7 @@ export default function changeHeaderColor() {
   let colorBgHeader;
 
   const changeResponsiveHeaderColor = (pageYOffsetChanged) => {
-    colorBgHeader = pageYOffsetChanged ? "var(--bg-second)" : "transparent";
+    colorBgHeader = pageYOffsetChanged ? "var(--bg-header)" : "transparent";
     $header.style.backgroundColor = colorBgHeader;
   };
   changeResponsiveHeaderColor(w.pageYOffset > 30);
