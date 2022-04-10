@@ -2,14 +2,14 @@
   --width-desktop: 80%;
   --bg-main-light-mode: #4c1036;
   --bg-second-light-mode: #71a9f7;
-  --bg-header-light:#71a9f7b6;
+  --bg-header-light: #71a9f7b6;
   --bg-third-light-mode: #c6d8ff8f;
   --text-light-mode: #000;
   --bg-dark-body: #131313;
 
   --bg-main-dark-mode: #71a9f7;
   --bg-second-dark-mode: #484848;
-    --bg-header-dark:#484848b8;
+  --bg-header-dark: #484848b8;
 
   --bg-third-dark-mode: #1d1d1da4;
   --text-dark-mode: #d5d5d5;
@@ -17,7 +17,7 @@
 }
 .light {
   --main-bg-gradient: #3886f2;
-    --bg-header: var(--bg-header-light);
+  --bg-header: var(--bg-header-light);
   --bg-main: var(--bg-main-light-mode);
   --bg-second: var(--bg-second-light-mode);
   --bg-third: var(--bg-third-light-mode);
@@ -26,7 +26,7 @@
 }
 .dark {
   --main-bg-gradient: rgb(76, 0, 255);
-    --bg-header: var(--bg-header-dark);
+  --bg-header: var(--bg-header-dark);
   --bg-main: var(--bg-main-dark-mode);
   --bg-second: var(--bg-second-dark-mode);
   --bg-third: var(--bg-third-dark-mode);
@@ -488,6 +488,15 @@ i.fa-sass {
   object-fit: cover;
   transform: scale(1.55);
 }
+.blur-bg {
+  border-radius: inherit;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #69696903;
+  transition: backdrop-filter 0.3s ease;
+  z-index: 10;
+}
 .dark img {
   filter: brightness(80%);
 }
@@ -506,7 +515,7 @@ i.fa-sass {
   opacity: 0;
 }
 .grid-card .blur-bg-description {
-  background-color: rgba(39, 39, 39, 0.75);
+  background-color: rgba(22, 22, 22, 0.463);
   color: #fff;
   height: 100%;
   padding: 10px 10px;
@@ -519,6 +528,9 @@ i.fa-sass {
   transform: translateY(100%);
   transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   border-radius: 10px;
+}
+.grid-card:hover .blur-bg {
+  backdrop-filter: blur(5px);
 }
 .grid-card:hover .blur-bg-description {
   transform: translateY(0);
@@ -728,7 +740,7 @@ body .width-desktop {
     margin-bottom: 60px;
   }
   header {
-    background: var(--bg-second)!important;
+    background: var(--bg-second) !important;
     position: fixed;
     top: calc(100vh - 60px);
     backdrop-filter: initial;
