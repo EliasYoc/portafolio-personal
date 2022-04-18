@@ -430,6 +430,9 @@ i.fa-sass {
   color: #fff;
   background-color: transparent;
 }
+.content-skills .content-skill-card:hover i.fa-js-square {
+  background-color: #000;
+}
 .content-skill-card.card-html .background-hover {
   background-color: #e34c26;
 }
