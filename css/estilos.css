@@ -285,7 +285,7 @@ main {
   margin-top: 4rem;
   padding: 4rem 2rem;
   background-color: var(--bg-third);
-  width: 80%;
+  max-width: 900px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -510,7 +510,7 @@ i.fa-sass {
   right: 0;
   text-align: center;
   transition: opacity 0.3s ease;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.792);
   color: #fff;
 }
 .grid-card:hover h3 {
@@ -520,6 +520,7 @@ i.fa-sass {
   background-color: rgba(22, 22, 22, 0.463);
   color: #fff;
   height: 100%;
+  width: 100%;
   padding: 10px 10px;
   position: absolute;
   z-index: 10;
